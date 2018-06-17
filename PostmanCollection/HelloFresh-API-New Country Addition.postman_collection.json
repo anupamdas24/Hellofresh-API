@@ -1,0 +1,31 @@
+{
+	"variables": [],
+	"info": {
+		"name": "HelloFresh-API-New Country Addition",
+		"_postman_id": "7df59d02-40ac-5761-40c9-2c99378126fb",
+		"description": "GroupKt service api to add a new country\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST call to add new Country",
+			"request": {
+				"url": "",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Test Country\",\n\"alpha2_code\": \"TC\",\n\"alpha3_code\": \"TCY\"\n}\n\n"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

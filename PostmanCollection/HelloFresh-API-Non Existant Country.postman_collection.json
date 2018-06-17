@@ -1,0 +1,25 @@
+{
+	"variables": [],
+	"info": {
+		"name": "HelloFresh-API-Non Existant Country",
+		"_postman_id": "6a56363e-4723-fbf2-cb67-a50dcabeb0b5",
+		"description": "GroupKT API service for Non Existant country",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET call to view inexistant country as ZQ",
+			"request": {
+				"url": "http://services.groupkt.com/country/get/iso2code/ZQ",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

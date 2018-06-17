@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<theme>standard</theme>
+		<encoding>UTF-8</encoding>
+		<protocol>https</protocol>
+		<documentTitle>Automation Report</documentTitle>
+		<reportName>Hello Fresh Challenge API</reportName>
+		<reportHeadline></reportHeadline>
+		<dateFormat>yyyy-MM-dd</dateFormat>
+		<timeFormat>HH:mm:ss</timeFormat>
+	</configuration>
+</extentreports>

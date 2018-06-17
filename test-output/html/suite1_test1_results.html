@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - DAP_API Tests</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>DAP_API Tests</h1>
+<p>
+  Test duration: 0.009s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.ge.DAP.Apitestscripts.DapNotification</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Validating Dap Notification  API's ">dapNotifyService</span>
+      </td>
+  <td class="duration">
+    0.008s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"null/email", "POST", {Authorization=eyJhbGciOiJSUzI1NiIsImtpZCI6ImxlZ2FjeS10b2tlbi1rZXkiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiJjYjNlMTFkNGM4ZTQ0ODg0YWQxMTYzNjFlNmQ2ZTNlZiIsInN1YiI6ImRpZ2l0YWxfZGFwX2NsaWVudF9zdGFnZSIsInNjb3BlIjpbInVhYS5yZXNvdXJjZSIsIm9wZW5pZCIsInByb2ZpbGUiXSwiY2xpZW50X2lkIjoiZGlnaXRhbF9kYXBfY2xpZW50X3N0YWdlIiwiY2lkIjoiZGlnaXRhbF9kYXBfY2xpZW50X3N0YWdlIiwiYXpwIjoiZGlnaXRhbF9kYXBfY2xpZW50X3N0YWdlIiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2NDc4YWNmOCIsImlhdCI6MTUwNDY3NDMwNSwiZXhwIjoxNTA0NjgxNTA0LCJpc3MiOiJodHRwczovL2E4YTJmZmM0LWIwNGUtNGVjMS1iZmVkLTdhNTFkZDQwODcyNS5wcmVkaXgtdWFhLnJ1bi5hd3MtdXN3MDItcHIuaWNlLnByZWRpeC5pby9vYXV0aC90b2tlbiIsInppZCI6ImE4YTJmZmM0LWIwNGUtNGVjMS1iZmVkLTdhNTFkZDQwODcyNSIsImF1ZCI6WyJ1YWEiLCJvcGVuaWQiLCJkaWdpdGFsX2RhcF9jbGllbnRfc3RhZ2UiXX0.cdkzQmOsXYHFln1I_HcnChm_312yJh6d46iGZLAO6DpaNtaDfoamsFxgERLuujj4RxQ5e0S_Np2VG-oylf8D4LIYP-oAOmrfzQeglWxHWJkMnqfaJxIYGO6_ODHZTQbWBwmDOzy2Ztq1fxFHv8u8MdUNahv83t6uvWgjyMaFikPf9x4cEPoJFadfeCF5RL_b5rZoTC5TMxiqtJu8TQSbbavNfGAvdf2sPm3SrbALLbrGUOIMdIIz07NEZCukQFrwHlJl5zrd9yXHrU52RpdtX4okmvzxetXlHixFcqXYqzsp-20JyEpws_YniHqIAXqvqYS8LqAoEdj0PNlBWQF47Q, Content-Type=application/json}, "[
+   {
+       "emailTo":"vishnu.partapsingh@ge.com",
+       "emailFrom":"info@dap.com",
+       "subject":"DAP Admin user notification",
+       "tenantName":"qaw23",
+       "body":"Dap Notification Service - (Customizable message) \n The BU/Tenant is being created first time and Admins are assigned"
+   },
+   {
+       "emailTo":"samrat.s@ge.com",
+       "emailFrom":"info@dap.com",
+       "subject":"DAP Admin user notification",
+       "tenantName":"qaw234",
+       "body":"Dap Notification Service - (Customizable message) \n The BU/Tenant is being created first time and Admins are assigned"
+   }
+]
+"</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.net.MalformedURLException: no protocol: null/email</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              java.net.URL.&lt;init&gt;(URL.java:593)<br />
+              java.net.URL.&lt;init&gt;(URL.java:490)<br />
+              java.net.URL.&lt;init&gt;(URL.java:439)<br />
+              com.ge.DAP.Apitestscripts.DapNotification.dapNotifyService(DapNotification.java:21)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>

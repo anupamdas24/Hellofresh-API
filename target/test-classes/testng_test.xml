@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="DAP_API Suite" verbose="1">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.hellofresh.utilities.ExtentReporterNG" />
+	</listeners>
+	<test name="Hello Fresh API Test Automation">
+		<classes>
+			<class name="com.hellofresh.Apitestscripts.GroupktServices" />
+		</classes>
+	</test>
+</suite>
+  

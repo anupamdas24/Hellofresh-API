@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-DAP_API_Suite">
+              <span class="suite-name border-failed">DAP_API Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-DAP_API_Suite">
+                    <span>testng_postmanTests.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-DAP_API_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-DAP_API_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-DAP_API_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-DAP_API_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-DAP_API_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-DAP_API_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DAP_API_Suite" class="hide-methods failed suite-DAP_API_Suite"> (hide)</a> <!-- hide-methods failed suite-DAP_API_Suite -->
+                      <a href="#" panel-name="suite-DAP_API_Suite" class="show-methods failed suite-DAP_API_Suite"> (show)</a> <!-- show-methods failed suite-DAP_API_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-DAP_API_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DAP_API_Suite" title="com.ge.DAP.Apitestscripts.DapNotification" hash-for-method="dapNotifyService(null/email, POST, {Authorization=eyJhbGciOiJSUzI1NiIsImtpZCI6ImxlZ2FjeS10b2tlbi1rZXkiLCJ0eXAiOiJKV1Q...)">dapNotifyService(null/email, POST, {Authorization=eyJhbGciOiJSUzI1NiIsImtpZCI6ImxlZ2FjeS10b2tlbi1rZXkiLCJ0eXAiOiJKV1Q...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-DAP_API_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-DAP_API_Suite" class="panel DAP_API_Suite">
+          <div class="suite-DAP_API_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ge.DAP.Apitestscripts.DapNotification</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dapNotifyService(null/email, POST, {Authorization=eyJhbGciOiJSUzI1NiIsImtpZCI6ImxlZ2FjeS10b2tlbi1rZXkiLCJ0eXAiOiJKV1Q...)">
+                  </a> <!-- dapNotifyService(null/email, POST, {Authorization=eyJhbGciOiJSUzI1NiIsImtpZCI6ImxlZ2FjeS10b2tlbi1rZXkiLCJ0eXAiOiJKV1Q...) -->
+                  <span class="method-name">dapNotifyService</span>
+                  <span class="parameters">(null/email, POST, {Authorization=eyJhbGciOiJSUzI1NiIsImtpZCI6ImxlZ2FjeS10b2tlbi1rZXkiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiJjYjNlMTFkNGM4ZTQ0ODg0YWQxMTYzNjFlNmQ2ZTNlZiIsInN1YiI6ImRpZ2l0YWxfZGFwX2NsaWVudF9zdGFnZSIsInNjb3BlIjpbInVhYS5yZXNvdXJjZSIsIm9wZW5pZCIsInByb2ZpbGUiXSwiY2xpZW50X2lkIjoiZGlnaXRhbF9kYXBfY2xpZW50X3N0YWdlIiwiY2lkIjoiZGlnaXRhbF9kYXBfY2xpZW50X3N0YWdlIiwiYXpwIjoiZGlnaXRhbF9kYXBfY2xpZW50X3N0YWdlIiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2NDc4YWNmOCIsImlhdCI6MTUwNDY3NDMwNSwiZXhwIjoxNTA0NjgxNTA0LCJpc3MiOiJodHRwczovL2E4YTJmZmM0LWIwNGUtNGVjMS1iZmVkLTdhNTFkZDQwODcyNS5wcmVkaXgtdWFhLnJ1bi5hd3MtdXN3MDItcHIuaWNlLnByZWRpeC5pby9vYXV0aC90b2tlbiIsInppZCI6ImE4YTJmZmM0LWIwNGUtNGVjMS1iZmVkLTdhNTFkZDQwODcyNSIsImF1ZCI6WyJ1YWEiLCJvcGVuaWQiLCJkaWdpdGFsX2RhcF9jbGllbnRfc3RhZ2UiXX0.cdkzQmOsXYHFln1I_HcnChm_312yJh6d46iGZLAO6DpaNtaDfoamsFxgERLuujj4RxQ5e0S_Np2VG-oylf8D4LIYP-oAOmrfzQeglWxHWJkMnqfaJxIYGO6_ODHZTQbWBwmDOzy2Ztq1fxFHv8u8MdUNahv83t6uvWgjyMaFikPf9x4cEPoJFadfeCF5RL_b5rZoTC5TMxiqtJu8TQSbbavNfGAvdf2sPm3SrbALLbrGUOIMdIIz07NEZCukQFrwHlJl5zrd9yXHrU52RpdtX4okmvzxetXlHixFcqXYqzsp-20JyEpws_YniHqIAXqvqYS8LqAoEdj0PNlBWQF47Q, Content-Type=application/json}, [
+   {
+       "emailTo":"vishnu.partapsingh@ge.com",
+       "emailFrom":"info@dap.com",
+       "subject":"DAP Admin user notification",
+       "tenantName":"qaw23",
+       "body":"Dap Notification Service - (Customizable message) \n The BU/Tenant is being created first time and Admins are assigned"
+   },
+   {
+       "emailTo":"samrat.s@ge.com",
+       "emailFrom":"info@dap.com",
+       "subject":"DAP Admin user notification",
+       "tenantName":"qaw234",
+       "body":"Dap Notification Service - (Customizable message) \n The BU/Tenant is being created first time and Admins are assigned"
+   }
+]
+)</span>
+                  <div class="stack-trace"><b>"java.net.MalformedURLException: no protocol: null/email
+	at java.net.URL.&lt;init&gt;(URL.java:593)
+	at java.net.URL.&lt;init&gt;(URL.java:490)
+	at java.net.URL.&lt;init&gt;(URL.java:439)
+	at com.ge.DAP.Apitestscripts.DapNotification.dapNotifyService(DapNotification.java:21)
+... Removed 24 stack frames<br/> java.net.MalformedURLException: no protocol: null/email
+	at java.net.URL.&lt;init&gt;(URL.java:593)
+	at java.net.URL.&lt;init&gt;(URL.java:490)
+	at java.net.URL.&lt;init&gt;(URL.java:439)
+	at com.ge.DAP.Apitestscripts.DapNotification.dapNotifyService(DapNotification.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>java.net.URL.<init>(URL.java:593)<br>java.net.URL.<init>(URL.java:490)<br>java.net.URL.<init>(URL.java:439)<br>com.ge.DAP.Apitestscripts.DapNotification.dapNotifyService(DapNotification.java:21)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Validating Dap Notification  API's )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DAP_API_Suite-class-failed -->
+        </div> <!-- panel DAP_API_Suite -->
+        <div panel-name="test-xml-DAP_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/anupamdas/Documents/GIT_CODE/DAPAUTOMATION/dap-qa-api-automation/src/test/resources/testng_postmanTests.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;DAP_API Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.ge.DAP.utilities.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;DAP_API Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ge.DAP.Apitestscripts.DapNotification&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DAP_API Tests --&gt;
+&lt;/suite&gt; &lt;!-- DAP_API Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-DAP_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for DAP_API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">DAP_API Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-DAP_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for DAP_API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-DAP_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for DAP_API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_DAP_API_Suite');
+function tableData_DAP_API_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'dapNotifyService')
+data.setCell(0, 2, 'com.ge.DAP.Apitestscripts.DapNotification')
+data.setCell(0, 3, 8);
+window.suiteTableData['DAP_API_Suite']= { tableData: data, tableDiv: 'times-div-DAP_API_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 ms</span>
+              <div id="times-div-DAP_API_Suite">
+              </div> <!-- times-div-DAP_API_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-DAP_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for DAP_API Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-DAP_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-DAP_API_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ge.DAP.Apitestscripts.DapNotification</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dapNotifyService(null/email, POST, {Authorization=eyJhbGciOiJSUzI1NiIsImtpZCI6ImxlZ2FjeS10b2tlbi1rZXkiLCJ0eXAiOiJKV1Q...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">saveBody([TestResult name=dapNotifyService status=FAILURE method=DapNotification.dapNotifyService(java.lang.S...)</span>
+                <span class="method-start">11 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

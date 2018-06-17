@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "HelloFresh-API-US,DE,GB",
+		"_postman_id": "c1a30459-772e-f2c3-77d2-1faa1065da16",
+		"description": "GroupKT Service for country code as US, DE and GB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET call to view country as US",
+			"request": {
+				"url": "http://services.groupkt.com/country/get/iso2code/US",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET call to view country as DE",
+			"request": {
+				"url": "http://services.groupkt.com/country/get/iso2code/DE",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET call to view country as GB",
+			"request": {
+				"url": "http://services.groupkt.com/country/get/iso2code/GB",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

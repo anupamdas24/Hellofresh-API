@@ -1,0 +1,35 @@
+{
+	"variables": [],
+	"info": {
+		"name": "HelloFresh-All Countries",
+		"_postman_id": "1acd2961-d0cc-4973-1a04-7857edaf0c08",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all countries data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Body matches string\"] = responseBody.has(\"result\");",
+							"",
+							"tests[\"validate the restResponse is present\"] = responseBody.has(\"RestResponse\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://services.groupkt.com/country/get/all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

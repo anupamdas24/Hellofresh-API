@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="DAP_API Suite" duration-ms="3441" started-at="2018-06-17T21:56:08Z" finished-at="2018-06-17T21:56:11Z">
+    <groups>
+    </groups>
+    <test name="Hello Fresh API Test Automation" duration-ms="3441" started-at="2018-06-17T21:56:08Z" finished-at="2018-06-17T21:56:11Z">
+      <class name="com.hellofresh.Apitestscripts.GroupktServices">
+        <test-method status="PASS" signature="getAPIForAllCountries(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="getAPIForAllCountries" duration-ms="1495" started-at="2018-06-18T03:26:08Z" description="Validating GroupKtServices APIs for all countries" data-provider="getDataForAllCountries" finished-at="2018-06-18T03:26:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GET all countries data]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://services.groupkt.com/country/get/all]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[GET]]>
+              </value>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPIForAllCountries -->
+        <test-method status="PASS" signature="saveBody(org.testng.ITestResult)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="saveBody" is-config="true" duration-ms="3" started-at="2018-06-18T03:26:09Z" finished-at="2018-06-18T03:26:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getAPIForAllCountries status=SUCCESS method=GroupktServices.getAPIForAllCountries(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveBody -->
+        <test-method status="PASS" signature="saveBody(org.testng.ITestResult)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="saveBody" is-config="true" duration-ms="1" started-at="2018-06-18T03:26:09Z" finished-at="2018-06-18T03:26:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getAPIForInexistantCountr status=SUCCESS method=GroupktServices.getAPIForInexistantCountr(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveBody -->
+        <test-method status="PASS" signature="getAPIForInexistantCountr(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="getAPIForInexistantCountr" duration-ms="0" started-at="2018-06-18T03:26:09Z" description="Validating GroupKtServices APIs for invalid country code" data-provider="getDataForNonExistantCountries" finished-at="2018-06-18T03:26:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GET call to view inexistant country as ZQ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://services.groupkt.com/country/get/iso2code/ZQ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[GET]]>
+              </value>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPIForInexistantCountr -->
+        <test-method status="PASS" signature="getAPIForUS(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="getAPIForUS" duration-ms="1" started-at="2018-06-18T03:26:09Z" description="Post api call to add a new country in the GroupKtServices" data-provider="getDataForNewCountryAddition" finished-at="2018-06-18T03:26:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[POST call to add new Country]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[POST]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{
+"name": "Test Country",
+"alpha2_code": "TC",
+"alpha3_code": "TCY"
+}
+
+]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPIForUS -->
+        <test-method status="PASS" signature="saveBody(org.testng.ITestResult)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="saveBody" is-config="true" duration-ms="1" started-at="2018-06-18T03:26:09Z" finished-at="2018-06-18T03:26:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getAPIForUS status=SUCCESS method=GroupktServices.getAPIForUS(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveBody -->
+        <test-method status="PASS" signature="getAPIForUS_DE_GB(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="getAPIForUS_DE_GB" duration-ms="653" started-at="2018-06-18T03:26:09Z" description="Validating GroupKtServices APIs for US DE and GB" data-provider="getDataForSpecificCountries" finished-at="2018-06-18T03:26:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GET call to view country as US]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://services.groupkt.com/country/get/iso2code/US]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[GET]]>
+              </value>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPIForUS_DE_GB -->
+        <test-method status="PASS" signature="saveBody(org.testng.ITestResult)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="saveBody" is-config="true" duration-ms="1" started-at="2018-06-18T03:26:10Z" finished-at="2018-06-18T03:26:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getAPIForUS_DE_GB status=SUCCESS method=GroupktServices.getAPIForUS_DE_GB(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveBody -->
+        <test-method status="PASS" signature="getAPIForUS_DE_GB(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="getAPIForUS_DE_GB" duration-ms="511" started-at="2018-06-18T03:26:10Z" description="Validating GroupKtServices APIs for US DE and GB" data-provider="getDataForSpecificCountries" finished-at="2018-06-18T03:26:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GET call to view country as DE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://services.groupkt.com/country/get/iso2code/DE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[GET]]>
+              </value>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPIForUS_DE_GB -->
+        <test-method status="PASS" signature="saveBody(org.testng.ITestResult)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="saveBody" is-config="true" duration-ms="1" started-at="2018-06-18T03:26:11Z" finished-at="2018-06-18T03:26:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getAPIForUS_DE_GB status=SUCCESS method=GroupktServices.getAPIForUS_DE_GB(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveBody -->
+        <test-method status="PASS" signature="getAPIForUS_DE_GB(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="getAPIForUS_DE_GB" duration-ms="714" started-at="2018-06-18T03:26:11Z" description="Validating GroupKtServices APIs for US DE and GB" data-provider="getDataForSpecificCountries" finished-at="2018-06-18T03:26:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GET call to view country as GB]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://services.groupkt.com/country/get/iso2code/GB]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[GET]]>
+              </value>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPIForUS_DE_GB -->
+        <test-method status="PASS" signature="saveBody(org.testng.ITestResult)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da]" name="saveBody" is-config="true" duration-ms="0" started-at="2018-06-18T03:26:11Z" finished-at="2018-06-18T03:26:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getAPIForUS_DE_GB status=SUCCESS method=GroupktServices.getAPIForUS_DE_GB(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hellofresh.Apitestscripts.GroupktServices@19fd43da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveBody -->
+      </class> <!-- com.hellofresh.Apitestscripts.GroupktServices -->
+    </test> <!-- Hello Fresh API Test Automation -->
+  </suite> <!-- DAP_API Suite -->
+</testng-results>

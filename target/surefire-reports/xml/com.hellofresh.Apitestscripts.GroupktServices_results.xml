@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Hello Fresh API Test Automation"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.374">
+  <properties />
+  
+  
+            <testcase name="getAPIForUS" time="0.001" classname="com.hellofresh.Apitestscripts.GroupktServices" />
+                <testcase name="getAPIForUS_DE_GB" time="0.653" classname="com.hellofresh.Apitestscripts.GroupktServices" />
+                <testcase name="getAPIForUS_DE_GB" time="0.511" classname="com.hellofresh.Apitestscripts.GroupktServices" />
+                <testcase name="getAPIForInexistantCountr" time="0.000" classname="com.hellofresh.Apitestscripts.GroupktServices" />
+                <testcase name="getAPIForAllCountries" time="1.495" classname="com.hellofresh.Apitestscripts.GroupktServices" />
+                <testcase name="getAPIForUS_DE_GB" time="0.714" classname="com.hellofresh.Apitestscripts.GroupktServices" />
+      
+</testsuite>
